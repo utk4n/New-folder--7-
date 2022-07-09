@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #2f25b1, #161d1a);
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+.App {
+  width: max-content;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul {
+  width: 100%;
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(90deg, #c4d4e3, #737596);
+  color: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+form {
+  margin-top: 5%;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 5px 0;
+}
+
+.counter {
+  color: red;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 2px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input,
+#add-btn {
+  outline: none;
+  border-radius: 10px;
+  border: none;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+input {
+  padding: 15px 30px;
+
+}
+
+#add-btn {
+  padding: 15px;
+  margin-left: 15px;
+  /* border-left: 10px solid red; */
+  font-weight: 700;
+  font-size: 14px;
+  transition: 500ms;
+}
+#add-btn:hover{
+  background : linear-gradient(90deg, #29a842, #30f511);
+  color: white;
+}
+
+.delete-todo {
+  padding: 20px;
+  align-self: center;
+  background: linear-gradient(90deg, #e9747c, #b31752);
+  border: none;
+  color: white;
+  font-size: large;
+  transition: 500ms;
+}
+
+.delete-todo:hover{
+  background : linear-gradient(90deg, #f03333, #a64430);
+}
+
+.clear-all-btn {
+  padding: 15px;
+  width: 160px;
+  border-radius: 5px;
+  border: none;
+  transition: 700ms;
+}
+
+.clear-all-btn:hover {
+  font-weight: 600;
+
+  background-color: red;
+  opacity: 1;
+  color: white;
+}
